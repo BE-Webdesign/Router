@@ -2,8 +2,10 @@
 /**
  * Tests bootstrap file.
  *
- * @package BEForever\Router
+ * @package BEforever\Routing
  */
+
+namespace BEforever\Routing\Tests;
 
 // Load main app file.
 require 'router.php';
