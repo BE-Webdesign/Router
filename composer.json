@@ -1,0 +1,14 @@
+{
+    "name": "beforever/router",
+    "description": "A PHP router library.",
+    "type": "library",
+    "license": "GPL-3.0",
+    "authors": [
+        {
+            "name": "BE-Webdesign",
+            "email": "cromleyedwin89@gmail.com"
+        }
+    ],
+    "minimum-stability": "alpha",
+    "require": {}
+}
