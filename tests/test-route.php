@@ -2,19 +2,21 @@
 /**
  * Main test case.
  *
- * @package Route\tests
+ * @package BEforever\Routing\Tests
  */
 
-use PHPUnit\Framework\TestCase;
+namespace BEforever\Routing\Tests;
+use \PHPUnit\Framework as PHPUnit;
+use \BEforever\Routing\App as Routing;
 
 /**
  * Test Case for the route entity.
  */
-class RouteTest extends PHPUnit_Framework_TestCase {
+class RouteTest extends PHPUnit\TestCase {
 	/**
 	 * Test whether the Route class exists.
 	 */
 	public function test_route_exists() {
-		$this->assertTrue( class_exists( 'Route' ) );
+		$this->assertTrue( class_exists( 'BEforever\Routing\App\Route' ) );
 	}
 }

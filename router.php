@@ -1,9 +1,12 @@
 <?php
 /**
- * BE Router is designed to be a extensible and agnostic PHP Router.
+ * BE Router is designed to be an extensible and agnostic PHP Router.
  *
- * @author  BEForever
- * @package BEForever\Router
+ * @author  BEforever
+ * @package BEforever\Routing
  */
 
-namespace BEForever\Router;
+namespace BEforever\Routing;
+
+// @TODO Replace with auto loading.
+require 'app/route.php';
