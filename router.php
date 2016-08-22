@@ -10,3 +10,5 @@ namespace BEforever\Routing;
 
 // @TODO Replace with auto loading.
 require 'app/route.php';
+require 'app/route-collection.php';
+require 'app/router.php';
