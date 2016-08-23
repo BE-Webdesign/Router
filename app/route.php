@@ -56,10 +56,14 @@ class Route {
 	 * @throws \BadFunctionCallException If the callback is not valid.
 	 */
 	public function dispatch() {
-		if ( is_callable( $this->callback ) ) {
-			return call_user_func( $this->callback );
-		} else {
-			throw new \BadFunctionCallException( 'The route callback is not a valid callback.' );
+		try {
+			if ( is_callable( $this->callback ) ) {
+				return call_user_func( $this->callback );
+			} else {
+				throw new \BadFunctionCallException( 'The route callback is not a valid callback.' );
+			}
+		} catch ( Exception $exception ) {
+			$this->handle_dispatch_error( $exception );
 		}
 	}
 
@@ -84,5 +88,14 @@ class Route {
 	 */
 	public function parse_options( array $options ) {
 		$this->callback = isset( $options['callback'] ) ? $options['callback'] : null;
+	}
+
+	/**
+	 * A description is necessary @TODO Add description.
+	 *
+	 * @param Exception $exception Exception passed in from error handler.
+	 */
+	public function handle_dispatch_error( $exception ) {
+		return;
 	}
 }

@@ -40,6 +40,7 @@ class RouteTest extends PHPUnit_Framework_TestCase {
 		$this->assertTrue( method_exists( $this->class_name, 'get_resource' ) );
 		$this->assertTrue( method_exists( $this->class_name, 'get_callback' ) );
 		$this->assertTrue( method_exists( $this->class_name, 'parse_options' ) );
+		$this->assertTrue( method_exists( $this->class_name, 'handle_dispatch_error' ) );
 	}
 
 	/**
